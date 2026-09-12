@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avika Trivedi | B.Tech Student & AI Enthusiast Portfolio</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Personal portfolio of Avika Trivedi - B.Tech student at JECRC University, Jaipur. Passionate about Artificial Intelligence, Web Development, and Digital Productivity." />
+  <meta name="keywords" content="Avika Trivedi, Portfolio, B.Tech Student, JECRC University, Artificial Intelligence, Web Development, Python, JavaScript, Jaipur" />
+  <meta name="author" content="Avika Trivedi" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Glow Elements -->
+  <div class="glow-sphere sphere-1"></div>
+  <div class="glow-sphere sphere-2"></div>
+  <div class="glow-sphere sphere-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Avika Trivedi Homepage">
+        <span class="logo-box">AT</span>
+        <span class="logo-text">Avika<span>.dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle light and dark mode" title="Switch Theme">
+          <i class="fa-solid fa-moon dark-icon"></i>
+          <i class="fa-solid fa-sun light-icon"></i>
+        </button>
+
+        <!-- Direct CTA -->
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Get in Touch</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" class="mobile-toggle" aria-label="Open Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Backdrop -->
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Open to Learning & Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Avika Trivedi</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="role-prefix">I am a</span>
+            <span class="role-text" id="roleTypewriter">B.Tech Student &amp; AI Enthusiast</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate about exploring the frontiers of <strong>Artificial Intelligence</strong>, building responsive <strong>Web Experiences</strong>, and optimizing <strong>Digital Productivity</strong>. Dedicated to turning modern concepts into practical, impactful solutions.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>View Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Contact Me</span>
+            </a>
+            <a href="https://www.linkedin.com/in/avika-trivedi" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="Avika Trivedi on LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Quick Stat Highlights -->
+          <div class="hero-quick-stats">
+            <div class="quick-stat-item">
+              <span class="stat-number">JECRC</span>
+              <span class="stat-label">University</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="quick-stat-item">
+              <span class="stat-number">Jaipur</span>
+              <span class="stat-label">Rajasthan, IN</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="quick-stat-item">
+              <span class="stat-number">AI &amp; Web</span>
+              <span class="stat-label">Tech Focus</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual">
+          <div class="visual-card-wrapper">
+            <!-- Glassmorphic Tech Card -->
+            <div class="developer-card glass-card">
+              <div class="card-header-bar">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+                <span class="card-filename">avika_trivedi.py</span>
+              </div>
+
+              <div class="avatar-container">
+                <div class="avatar-ring">
+                  <div class="avatar-inner">
+                    <i class="fa-solid fa-user-astronaut avatar-icon"></i>
+                  </div>
+                </div>
+                <div class="avatar-info">
+                  <h3 class="avatar-name">Avika Trivedi</h3>
+                  <p class="avatar-subtitle"><i class="fa-solid fa-graduation-cap"></i> B.Tech Student</p>
+                  <p class="avatar-location"><i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan</p>
+                </div>
+              </div>
+
+              <!-- Mini Interactive Terminal / Code Snippet -->
+              <div class="code-snippet">
+                <div class="code-line"><span class="code-kw">class</span> <span class="code-class">TechInnovator</span>:</div>
+                <div class="code-line indent-1"><span class="code-prop">name</span> = <span class="code-str">"Avika Trivedi"</span></div>
+                <div class="code-line indent-1"><span class="code-prop">college</span> = <span class="code-str">"JECRC University"</span></div>
+                <div class="code-line indent-1"><span class="code-prop">passions</span> = [<span class="code-str">"AI"</span>, <span class="code-str">"WebDev"</span>, <span class="code-str">"GenAI"</span>]</div>
+                <div class="code-line indent-1"><span class="code-prop">current_mission</span> = <span class="code-str">"Building practical tech!"</span></div>
+              </div>
+
+              <!-- Floating Micro Chips -->
+              <div class="floating-chip chip-ai">
+                <i class="fa-solid fa-brain"></i> AI &amp; GenAI
+              </div>
+              <div class="floating-chip chip-web">
+                <i class="fa-solid fa-code"></i> Modern Web
+              </div>
+              <div class="floating-chip chip-prod">
+                <i class="fa-solid fa-bolt"></i> Productivity
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll down to About section">
+        <span>Explore</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-sparkles"></i> Who I Am</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">
+            A blend of curiosity, engineering mindset, and dedication toward crafting high-value digital solutions.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story / Bio Card -->
+          <div class="about-card glass-card narrative-card">
+            <div class="card-icon-badge">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <h3 class="card-title">Hello &amp; Welcome!</h3>
+            <p class="about-lead">
+              I am a <strong>B.Tech student</strong> at <strong>JECRC University</strong> in Jaipur, Rajasthan, driven by a strong enthusiasm for modern technology, artificial intelligence, and innovative software development.
+            </p>
+            <p class="about-text">
+              My journey revolves around turning curiosity into capability. Rather than just understanding theoretical concepts, I actively build hands-on applications across modern web frameworks, Python, and emerging Generative AI tools.
+            </p>
+            <p class="about-text">
+              I am also deeply fascinated by <strong>digital productivity</strong>—creating streamlined workflows, automated routines, and elegant user interfaces that help people work smarter, learn faster, and achieve more.
+            </p>
+
+            <div class="about-details-list">
+              <div class="detail-item">
+                <span class="detail-icon"><i class="fa-solid fa-location-dot"></i></span>
+                <div>
+                  <span class="detail-label">Location</span>
+                  <span class="detail-val">Jaipur, Rajasthan, India</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon"><i class="fa-solid fa-building-columns"></i></span>
+                <div>
+                  <span class="detail-label">College</span>
+                  <span class="detail-val">JECRC University</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon"><i class="fa-solid fa-envelope"></i></span>
+                <div>
+                  <span class="detail-label">Email</span>
+                  <a href="mailto:avikatrivedi13@gmail.com" class="detail-val link">avikatrivedi13@gmail.com</a>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon"><i class="fa-brands fa-linkedin"></i></span>
+                <div>
+                  <span class="detail-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/avika-trivedi" target="_blank" rel="noopener noreferrer" class="detail-val link">Avika Trivedi</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillars / Core Focus Grid -->
+          <div class="pillars-grid">
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon icon-ai">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="pillar-content">
+                <h4>Artificial Intelligence &amp; GenAI</h4>
+                <p>Exploring machine learning fundamentals, prompt architecture, and leveraging generative models to solve practical challenges.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon icon-web">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="pillar-content">
+                <h4>Modern Web Development</h4>
+                <p>Designing interactive, responsive, and aesthetically pleasing websites using clean semantic HTML, CSS3, and JavaScript.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon icon-prod">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <div class="pillar-content">
+                <h4>Digital Productivity</h4>
+                <p>Devising structured workflows, task automation, and digital systems that enhance focus, efficiency, and engineering output.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon icon-learn">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <div class="pillar-content">
+                <h4>Continuous Innovation</h4>
+                <p>Experimenting with fresh libraries, collaborating on projects, and continuously expanding modern technology skill sets.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-graduation-cap"></i> Academic Pathway</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">
+            Solid foundations in engineering principles, computer science, and next-generation technologies.
+          </p>
+        </div>
+
+        <div class="education-timeline-wrapper">
+          <div class="education-card glass-card">
+            <div class="edu-top-meta">
+              <div class="edu-badge">
+                <i class="fa-solid fa-award"></i> Current Program
+              </div>
+              <div class="edu-duration">
+                <i class="fa-regular fa-calendar"></i> 2022 – Present
+              </div>
+            </div>
+
+            <div class="edu-main-info">
+              <div class="edu-logo-box">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <div class="edu-heading">
+                <h3 class="degree-title">Bachelor of Technology (B.Tech)</h3>
+                <h4 class="college-title">JECRC UNIVERSITY</h4>
+                <p class="college-location"><i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan, India</p>
+              </div>
+            </div>
+
+            <p class="edu-summary">
+              Engaged in rigorous undergraduate study with a focus on computer science, software design, and applied engineering. Emphasizing both analytical problem solving and hands-on implementation of contemporary software technologies.
+            </p>
+
+            <!-- Relevant Learning Areas -->
+            <div class="learning-areas-block">
+              <h4 class="learning-areas-title">
+                <i class="fa-solid fa-book-open-reader"></i> Relevant Learning Areas &amp; Coursework:
+              </h4>
+              <div class="tags-container">
+                <span class="tech-tag"><i class="fa-solid fa-check"></i> Data Structures &amp; Algorithms</span>
+                <span class="tech-tag"><i class="fa-solid fa-check"></i> Artificial Intelligence Fundamentals</span>
+                <span class="tech-tag"><i class="fa-solid fa-check"></i> Object-Oriented Programming (OOP)</span>
+                <span class="tech-tag"><i class="fa-solid fa-check"></i> Web Technologies &amp; Standards</span>
+                <span class="tech-tag"><i class="fa-solid fa-check"></i> Database Management Systems (DBMS)</span>
+                <span class="tech-tag"><i class="fa-solid fa-check"></i> Python Programming &amp; Scripting</span>
+                <span class="tech-tag"><i class="fa-solid fa-check"></i> Software Engineering Principles</span>
+                <span class="tech-tag"><i class="fa-solid fa-check"></i> Digital Logic &amp; Computer Networks</span>
+              </div>
+            </div>
+
+            <!-- Key Academic Highlights -->
+            <div class="edu-highlights">
+              <div class="highlight-pill">
+                <i class="fa-solid fa-circle-check"></i> Active participant in university tech workshops &amp; hackathons
+              </div>
+              <div class="highlight-pill">
+                <i class="fa-solid fa-circle-check"></i> Consistent focus on practical project development
+              </div>
+              <div class="highlight-pill">
+                <i class="fa-solid fa-circle-check"></i> Self-driven exploration of emerging AI and GenAI tools
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-code"></i> Technical Stack</span>
+          <h2 class="section-title">Skills &amp; <span class="gradient-text">Expertise</span></h2>
+          <p class="section-subtitle">
+            A curated set of technologies and competencies I am actively learning, mastering, and applying in projects.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="skill-filters">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="ai">AI &amp; Programming</button>
+          <button class="filter-btn" data-filter="productivity">Productivity &amp; Tools</button>
+        </div>
+
+        <!-- Skill Cards Grid -->
+        <div class="skills-grid" id="skillsGrid">
+
+          <!-- 1. HTML5 -->
+          <div class="skill-card glass-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap html-color">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+            <h3 class="skill-name">HTML5</h3>
+            <p class="skill-desc">Semantic document structure, clean accessibility (a11y), standard web forms, and search engine optimization.</p>
+            <div class="skill-tags">
+              <span>Semantic UI</span>
+              <span>Accessibility</span>
+              <span>DOM</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="--target-width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- 2. CSS3 -->
+          <div class="skill-card glass-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap css-color">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+            <h3 class="skill-name">CSS3</h3>
+            <p class="skill-desc">Modern responsive styling, Flexbox, CSS Grid, keyframe animations, glassmorphism, and custom properties.</p>
+            <div class="skill-tags">
+              <span>Flexbox/Grid</span>
+              <span>Animations</span>
+              <span>Responsive</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="--target-width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- 3. JavaScript -->
+          <div class="skill-card glass-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap js-color">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <span class="skill-level-badge">Intermediate</span>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-desc">Modern ES6+ syntax, asynchronous programming (Promises, async/await), DOM manipulation, and interactive web behaviors.</p>
+            <div class="skill-tags">
+              <span>ES6+</span>
+              <span>Async/APIs</span>
+              <span>Interactive UI</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="--target-width: 80%;"></div>
+            </div>
+          </div>
+
+          <!-- 4. Python -->
+          <div class="skill-card glass-card" data-category="ai">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap py-color">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+            <h3 class="skill-name">Python</h3>
+            <p class="skill-desc">Object-oriented programming, data structures, scripting, algorithm implementation, and automation workflows.</p>
+            <div class="skill-tags">
+              <span>OOP</span>
+              <span>Scripting</span>
+              <span>Data Structures</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="--target-width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- 5. Artificial Intelligence -->
+          <div class="skill-card glass-card" data-category="ai">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap ai-color">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <span class="skill-level-badge">Passionate</span>
+            </div>
+            <h3 class="skill-name">Artificial Intelligence</h3>
+            <p class="skill-desc">Foundational principles of intelligent agents, problem search, machine learning concepts, and predictive systems.</p>
+            <div class="skill-tags">
+              <span>ML Concepts</span>
+              <span>Neural Nets</span>
+              <span>Algorithms</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="--target-width: 75%;"></div>
+            </div>
+          </div>
+
+          <!-- 6. Generative AI -->
+          <div class="skill-card glass-card" data-category="ai">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap genai-color">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <span class="skill-level-badge">Emerging Focus</span>
+            </div>
+            <h3 class="skill-name">Generative AI</h3>
+            <p class="skill-desc">Prompt engineering techniques, LLM tooling, multimodal AI utilities, and creative generative development workflows.</p>
+            <div class="skill-tags">
+              <span>Prompt Eng</span>
+              <span>LLM APIs</span>
+              <span>AI Workflows</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="--target-width: 80%;"></div>
+            </div>
+          </div>
+
+          <!-- 7. Web Development -->
+          <div class="skill-card glass-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap webdev-color">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <span class="skill-level-badge">Core Competency</span>
+            </div>
+            <h3 class="skill-name">Web Development</h3>
+            <p class="skill-desc">End-to-end frontend architecture, cross-browser compatibility, responsive mobile-first layouts, and modern UI/UX design.</p>
+            <div class="skill-tags">
+              <span>Frontend</span>
+              <span>UI/UX</span>
+              <span>Responsive</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="--target-width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- 8. Digital Productivity -->
+          <div class="skill-card glass-card" data-category="productivity">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap prod-color">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+              <span class="skill-level-badge">Specialist</span>
+            </div>
+            <h3 class="skill-name">Digital Productivity</h3>
+            <p class="skill-desc">Advanced workflow optimization, Notion workspace design, developer toolchains, smart automation, and time architecture.</p>
+            <div class="skill-tags">
+              <span>Workflows</span>
+              <span>Automation</span>
+              <span>Toolchains</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="--target-width: 90%;"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-laptop-code"></i> Portfolio Work</span>
+          <h2 class="section-title">Practical <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">
+            Hands-on applications demonstrating practical problem-solving across AI, web engineering, and productivity.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card glass-card">
+            <div class="project-visual-header header-ai">
+              <div class="project-icon-badge">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <span class="project-type-tag">AI &amp; Python</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">GenAI Smart Prompt &amp; Task Assistant</h3>
+              <p class="project-desc">
+                An intelligent web tool designed to refine user prompts, generate structured study summaries, and automate task breakdown using generative AI models.
+              </p>
+              <div class="project-tech-tags">
+                <span>Python</span>
+                <span>Generative AI</span>
+                <span>HTML/CSS/JS</span>
+                <span>REST API</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="project-link-btn primary">
+                  <i class="fa-solid fa-eye"></i> View Details
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn icon-only" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card glass-card">
+            <div class="project-visual-header header-prod">
+              <div class="project-icon-badge">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <span class="project-type-tag">Productivity &amp; Web</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Digital Productivity &amp; Habit Hub</h3>
+              <p class="project-desc">
+                A streamlined dashboard for students to track daily study milestones, maintain focused deep-work timers, and analyze weekly productivity trends.
+              </p>
+              <div class="project-tech-tags">
+                <span>JavaScript</span>
+                <span>CSS3 Grid</span>
+                <span>Local Storage</span>
+                <span>UI/UX</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="project-link-btn primary">
+                  <i class="fa-solid fa-eye"></i> View Details
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn icon-only" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card glass-card">
+            <div class="project-visual-header header-web">
+              <div class="project-icon-badge">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <span class="project-type-tag">Web Development</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Avika Trivedi Personal Portfolio</h3>
+              <p class="project-desc">
+                A high-performance, responsive portfolio with dark/light themes, sleek glassmorphic aesthetics, fluid micro-interactions, and accessible architecture.
+              </p>
+              <div class="project-tech-tags">
+                <span>HTML5</span>
+                <span>Modern CSS3</span>
+                <span>Vanilla JS</span>
+                <span>Responsive</span>
+              </div>
+              <div class="project-links">
+                <a href="#hero" class="project-link-btn primary">
+                  <i class="fa-solid fa-arrow-up"></i> Live Preview
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn icon-only" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-regular fa-paper-plane"></i> Get In Touch</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="section-subtitle">
+            Whether you'd like to collaborate, discuss technology, or simply say hello — my inbox is always open!
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-column">
+            <div class="contact-card glass-card">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Direct Email</span>
+                <a href="mailto:avikatrivedi13@gmail.com" class="contact-value" id="emailText">avikatrivedi13@gmail.com</a>
+              </div>
+              <button class="copy-btn" id="copyEmailBtn" title="Copy Email Address" aria-label="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+                <span class="copy-tooltip">Copy</span>
+              </button>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Professional Network</span>
+                <a href="https://www.linkedin.com/in/avika-trivedi" target="_blank" rel="noopener noreferrer" class="contact-value">
+                  Avika Trivedi <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Location</span>
+                <p class="contact-value text-static">Jaipur, Rajasthan, India</p>
+              </div>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-icon">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Institution</span>
+                <p class="contact-value text-static">JECRC UNIVERSITY</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-column">
+            <div class="contact-form-card glass-card">
+              <h3 class="form-title">Send Me a Message</h3>
+              <p class="form-subtitle">Fill out the form below to initiate an email directly.</p>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Your Name</label>
+                  <div class="input-wrap">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Alex Sharma" required />
+                  </div>
+                  <span class="field-error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Your Email</label>
+                  <div class="input-wrap">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. alex@example.com" required />
+                  </div>
+                  <span class="field-error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="messageSubject" class="form-label">Subject</label>
+                  <div class="input-wrap">
+                    <i class="fa-solid fa-heading input-icon"></i>
+                    <input type="text" id="messageSubject" name="subject" class="form-input" placeholder="e.g. Collaboration on AI Project" required />
+                  </div>
+                  <span class="field-error" id="subjectError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage" class="form-label">Your Message</label>
+                  <div class="input-wrap textarea-wrap">
+                    <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                    <textarea id="senderMessage" name="message" rows="4" class="form-input form-textarea" placeholder="Hello Avika, I'd love to connect regarding..." required></textarea>
+                  </div>
+                  <span class="field-error" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                  <span>Send Message</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Notification Pop-up -->
+  <div class="toast-notification" id="toastNotification" role="alert" aria-live="polite">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span class="toast-message" id="toastMessage">Email copied to clipboard!</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo-box">AT</span>
+        <div>
+          <span class="footer-name">Avika Trivedi</span>
+          <p class="footer-tagline">B.Tech Student &bull; JECRC University, Jaipur</p>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/avika-trivedi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:avikatrivedi13@gmail.com" aria-label="Email" class="social-icon">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Avika Trivedi. Designed &amp; built with passion for technology &amp; AI.</p>
+        <a href="#hero" class="back-to-top" aria-label="Scroll back to top">
+          <span>Back to Top</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
